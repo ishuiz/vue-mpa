@@ -1,0 +1,83 @@
+/*
+  按照 tailwind.css 定义
+  https://tailwindcss.com/docs
+*/
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.underline {
+  text-decoration: underline;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100%;
+  @extend .mx-auto;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
+  @media (min-width: 1536px) {
+    max-width: 1536px;
+  }
+}
+
+.clearfix {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.ell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-indent {
+  text-indent: 2em;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-warning {
+  color: $color-warning;
+}

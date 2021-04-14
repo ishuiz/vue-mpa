@@ -1,0 +1,67 @@
+@import "./minireset.scss";
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  color: $color-text-base;
+  background-color: $color-body-bg;
+  line-height: $line-height-base;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+  transition: $transition-color;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+a,
+button,
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+
+[v-cloak] {
+  display: none
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(144, 147, 153, .4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(144, 147, 153, 0.8);
+}
+::-webkit-scrollbar-corner {
+  background: #f6f6f6;
+}

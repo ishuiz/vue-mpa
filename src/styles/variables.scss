@@ -1,0 +1,94 @@
+// 参考：
+// https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+// https://github.com/ElemeFE/element/blob/dev/packages/theme-chalk/src/common/var.scss
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+$white: #fff !default;
+$black: #000 !default;
+
+$color-primary: #409eff !default;
+$color-primary-light-1: mix($white, $color-primary, 10%) !default;
+$color-primary-light-2: mix($white, $color-primary, 20%) !default;
+$color-primary-light-3: mix($white, $color-primary, 30%) !default;
+$color-primary-light-4: mix($white, $color-primary, 40%) !default;
+$color-primary-light-5: mix($white, $color-primary, 50%) !default;
+$color-primary-light-6: mix($white, $color-primary, 60%) !default;
+$color-primary-light-7: mix($white, $color-primary, 70%) !default;
+$color-primary-light-8: mix($white, $color-primary, 80%) !default;
+$color-primary-light-9: mix($white, $color-primary, 90%) !default;
+
+$color-info: #909399 !default;
+$color-success: #67C23A !default;
+$color-warning: #E6A23C !default;
+$color-error: #F56C6C !default;
+$color-disabled: #bbb;
+
+$color-text-base: #606266 !default;
+$color-text-primary: #303133 !default;
+$color-text-secondary: #909399 !default;
+
+$color-bg-base: #F5F7FA !default;
+$color-bg-lazyload: #e8e8e8 !default;
+
+$color-link: $color-primary-light-2 !default;
+$color-link-hover: $color-primary !default;
+
+$color-border-base: #DCDFE6 !default;
+$color-border-light: #E4E7ED !default;
+$color-border-lighter: #EBEEF5 !default;
+
+$color-body-bg: #e9f1f4 !default;
+
+// Fonts
+// Font, line-height, and color for body text, headings, and more.
+$font-size-base: 14px !default;
+$font-size-xs: 12px !default;
+$font-size-sm: 13px !default;
+$font-size-md: 16px !default;
+$font-size-lg: 18px !default;
+$font-size-xl: 22px !default;
+
+$line-height-base: 1.5 !default;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Microsoft YaHei, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+// Border
+$border-width-base: 1px !default;
+$border-style-base: solid !default;
+$border-color-base: $color-border-base !default;
+$border-color-light: $color-border-light !default;
+$border-color-lighter: $color-border-lighter !default;
+$border-base: $border-width-base $border-style-base $border-color-base !default;
+
+$border-radius-base: 4px !default;
+$border-radius-sm: 2px !default;
+$border-radius-md: 6px !default;
+$border-radius-lg: 8px !default;
+
+// Gutter
+$gutter-xs: 4px !default;
+$gutter-sm: 10px !default;
+$gutter-base: 12px !default;
+$gutter-md: 16px !default;
+$gutter-lg: 24px !default;
+$gutter-xl: 36px !default;
+
+// Box-shadow
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04) !default;
+$box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12) !default;
+$box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+
+// Transition
+$transition-base: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$transition-fade: opacity .3s cubic-bezier(0.23, 1, 0.32, 1) !default;
+$transition-color: color .2s cubic-bezier(.645,.045,.355,1) !default;
+
+// Z-index
+$zindex-base: 1 !default;
